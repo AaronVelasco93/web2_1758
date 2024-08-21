@@ -19,4 +19,4 @@ console.log ("Tu nombre es: ");
 console.log("Tu edad es:");
     console.log(edad);   
 console.log("Tu nacionalidad es:") 
-    console.log(nacionalidad)
+    console.log(nacionalidad);
