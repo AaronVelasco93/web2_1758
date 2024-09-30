@@ -11,7 +11,7 @@ while(confirm("Deseas agregar otra fruta?")){
 console.log("Estas son las frutas que  agregaste");
 
 frutas.forEach((valor,numero)=>{
-    console.log(`${numero+1}.- ${fruta}`);
+    console.log(`${numero+1}.- ${valor}`);
 });
 
 /*
