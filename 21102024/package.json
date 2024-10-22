@@ -1,0 +1,18 @@
+{
+  "name": "21102024",
+  "version": "1.0.0",
+  "description": "aplicacion con express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "El Aaron",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
