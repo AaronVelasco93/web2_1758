@@ -1,4 +1,6 @@
 const express = require('express'); //Importacion del modulo de express
+const path = require("path");
+
 const app = express(); // Crea una instancia de un aplicacion de express
 const PORT =3000;//Definimos el puerto que vamos a ocupar
 
