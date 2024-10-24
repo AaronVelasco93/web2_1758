@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h4 style="text-align:center">Generación de QR para registro</h4>
+    </header>
+
+    <div style="margin-top:50px">
+        <div>
+
+            <label for="input1">Nombre:</label>
+            <input type="text" id="input1" required maxlength="255" placeholder="Nombre completo">
+
+            <label for="input2">Correo Electronico:</label>
+            <input type="text" id="input2" type="email" required maxlength="255"
+                placeholder="Ingresa el correo electronico" required>
+
+            <label for="input3">Selección de Institución:</label>
+            <input type="text" id="input3" list="InstitucionLista" required>
+            <datalist id="InstitucionLista">
+                <option value="Universidad Nacional Autónoma de México (UNAM)">Universidad Nacional Autónoma de México
+                    (UNAM)</option>
+                <option value="Instituto Politécnico Nacional (IPN)">Instituto Politécnico Nacional (IPN)</option>
+                <option value="Tecnológico de Monterrey">Tecnológico de Monterrey </option>
+                <option value="Instituto Tecnológico Autónomo de México (ITAM)">Instituto Tecnológico Autónomo de México
+                    (ITAM) </option>
+                <option value="Universidad Autónoma Metropolitana (UAM)">Universidad Autónoma Metropolitana (UAM)
+                </option>
+                <option value="Universidad Iberoamericana (IBERO)">Universidad Iberoamericana (IBERO) </option>
+                <option value="Universidad La Salle">Universidad La Salle </option>
+                <option value="Universidad Panamericana (UP)">Universidad Panamericana (UP)</option>
+
+            </datalist>
+            <label for="input4">Dependencía:</label>
+            <input type="text" id="input4">
+
+            <div>
+                <button onclick="generarQR()" class="btn btn-primary" style="background-color:black;color:white">Generar
+                    QR</button>
+                <button onclick="location.href='index.html'" class="btn btn-primary"
+                    style="background-color:black;color:white">Generar Nuevo QR</button>
+            </div>
+
+            <div style="text-align:center" id="qr-code">
+            <!-- Imagen con QR -->
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
